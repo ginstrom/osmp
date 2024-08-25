@@ -24,7 +24,8 @@ def get_tokyo_stations():
                 'lon': element['lon'],
                 'name': element['tags'].get('name', 'Unknown'),
                 'name:en': element['tags'].get('name:en', 'Unknown'),
-                'operator': element['tags'].get('operator', 'Unknown')
+                'operator': element['tags'].get('operator', 'Unknown'),
+                'wikipedia': element['tags'].get('wikipedia', 'Unknown'),
             }
             stations.append(station)
 
